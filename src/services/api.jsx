@@ -1,6 +1,4 @@
 import axios from 'axios';
-
-const API_KEY = 'b4cd35bb2e985da1e22f4987be9bb4a6';
 const BASE_URL = 'https://gnews.io/api/v4';
 
 // Cache storage
@@ -49,7 +47,7 @@ export const fetchNews = async (category = 'top') => {
     }
 
     const categoryParam = getCategoryParam(category);
-    const endpoint = `${BASE_URL}/top-headlines?category=${categoryParam}&lang=en&apikey=${API_KEY}&max=10`;
+    const endpoint = `${BASE_URL}/top-headlines?category=${categoryParam}&lang=en&apikey=${import.meta.env.VITE_API_KEY}&max=10`;
     
     const response = await axios.get(endpoint);
     

@@ -25,10 +25,10 @@ function App() {
           <footer className="bg-neutral-800 text-white py-6">
             <div className="container-custom text-center">
               <p className="text-neutral-300">
-                &copy; {new Date().getFullYear()} NewsHub. Powered by NewsData API.
+                &copy; {new Date().getFullYear()} NewsHub. Powered by GNews API.
               </p>
               <p className="text-xs text-neutral-400 mt-2">
-                All news content is provided by various sources through the NewsData API and belongs to their respective owners.
+                All news content is provided by various sources through the GNews API and belongs to their respective owners.
               </p>
             </div>
           </footer>
